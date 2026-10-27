@@ -1,3 +1,14 @@
+xdg-desktop-portal-xapp (1.2.0) adrien; urgency=medium
+
+  [ Aleksey Samoilov ]
+  * Implement AppChooser portal (#27)
+
+  [ Clement Lefebvre ]
+  * Simplify AppChooser
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 27 Oct 2026 12:55:18 +0000
+
 xdg-desktop-portal-xapp (1.1.5) adrien; urgency=medium
 
   [ Michael Webster ]
