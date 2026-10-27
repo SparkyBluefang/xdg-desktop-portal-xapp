@@ -335,7 +335,7 @@ app_chooser_dialog_new (const char **choices,
     {
       g_autofree char *heading = NULL;
 
-      heading = g_strdup_printf (_("Choose an application to open the file “%s”."), short_location);
+      heading = g_strdup_printf (_("Choose an application to open the file '%s'."), short_location);
       gtk_label_set_label (GTK_LABEL (dialog->heading), heading);
     }
   else
@@ -354,12 +354,12 @@ app_chooser_dialog_new (const char **choices,
       gtk_widget_show (dialog->empty_box);
       gtk_stack_set_visible_child_name (GTK_STACK (dialog->stack), "empty");
       gtk_widget_hide (dialog->open_button);
-      gtk_button_set_label (GTK_BUTTON (dialog->cancel_button), _("_OK"));
+      gtk_button_set_label (GTK_BUTTON (dialog->cancel_button), _("OK"));
       if (location)
         {
           g_autofree char *label = NULL;
 
-          label = g_strdup_printf (_("No apps installed that can open “%s”."), short_location);
+          label = g_strdup_printf (_("No apps installed that can open '%s'."), short_location);
           gtk_label_set_label (GTK_LABEL (dialog->empty_label), label);
         }
       else
