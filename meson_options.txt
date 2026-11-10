@@ -7,3 +7,17 @@ option('systemduserunitdir',
   type: 'string',
   description: 'Directory for systemd user service files'
 )
+
+option(
+  'wayland',
+  type: 'feature',
+  value: 'auto',
+  description: 'Enable Wayland support'
+)
+
+option(
+  'x11',
+  type: 'feature',
+  value: 'auto',
+  description: 'Enable X11 support'
+)

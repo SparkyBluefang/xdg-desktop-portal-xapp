@@ -64,10 +64,10 @@ config_entries = {
 }
 config = configuration_data(config_entries)
 
-gtk_x11_dep = dependency('gtk+-x11-3.0', required: false)
+gtk_x11_dep = dependency('gtk+-x11-3.0', required: get_option('x11'))
 config.set('HAVE_GTK_X11', gtk_x11_dep.found())
 
-gtk_wayland_dep = dependency('gtk+-wayland-3.0', required: false)
+gtk_wayland_dep = dependency('gtk+-wayland-3.0', required: get_option('wayland'))
 config.set('HAVE_GTK_WAYLAND', gtk_wayland_dep.found())
 
 built_sources += configure_file(output: 'config.h', configuration: config)
